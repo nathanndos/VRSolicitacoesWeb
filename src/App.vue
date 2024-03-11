@@ -3,9 +3,18 @@
 </template>
 
 <script>
+import Pessoa from './services/Pessoa';
+export default
+{
 
-export default {
-  name: 'App',
+  mounted()
+  {
+    Pessoa.getAll().then(i =>{
+      console.log(i)
+    })
+  }
 }
+
+
 </script>
 
